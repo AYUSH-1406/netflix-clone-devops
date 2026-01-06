@@ -18,7 +18,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 bat """
-                docker build -t netflix-frontend:%IMAGE_TAG% .
+                docker build -t netflix-frontend:%IMAGE_TAG% Application-Code
                 """
             }
         }
