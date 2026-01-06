@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: netflix-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: netflix-frontend
+  template:
+    metadata:
+      labels:
+        app: netflix-frontend
+    spec:
+      containers:
+      - name: netflix-frontend
+        image: 203071037199.dkr.ecr.ap-south-1.amazonaws.com/netflix-frontend:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        env:
+        - name: VITE_APP_TMDB_V3_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: tmdb-config
+              key: VITE_APP_TMDB_V3_API_KEY
