@@ -1,6 +1,8 @@
 # 🎬 Netflix Clone – End‑to‑End DevOps CI/CD on AWS
 
 <img width="1718" height="636" alt="image" src="https://github.com/user-attachments/assets/bf6b39de-15e7-4b02-b2d8-f540bcf06ab3" />
+<img width="1491" height="742" alt="image" src="https://github.com/user-attachments/assets/5e5f395b-563a-4972-a1a6-22cc6c70501d" />
+
 
 
 An end‑to‑end **enterprise‑style DevOps project** where a Netflix‑like frontend application is built, containerized, pushed to **Amazon ECR**, and deployed on **Amazon EKS** using a **Jenkins CI pipeline**.
